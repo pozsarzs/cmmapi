@@ -1,0 +1,39 @@
+# +----------------------------------------------------------------------------+
+# | CMMAPI 0.1 * Shell script programming API for MMxD device                  |
+# | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@.szerafingomba.hu>           |
+# | Makefile                                                                   |
+# | Makefile for Unix-like systems                                             |
+# +----------------------------------------------------------------------------+
+
+name		= cmmapi
+version		= @version@
+architecture	= @architecture@
+os              = @os@
+
+prefix		= @prefix@
+bindir		= @bindir@
+datarootdir	= @datarootdir@
+exec_prefix	= @exec_prefix@
+libdir		= @libdir@
+localedir	= @datarootdir@/locale
+mandir		= @mandir@
+srcdir		= @srcdir@
+sysconfdir	= @sysconfdir@
+
+binmode		= 0755
+txtmode		= 0644
+
+install		= @install@
+make		= @make@
+rm		= @rm@ -f
+
+fpflag		= -T@os@ \
+                  -dUseFHS \
+                  -MObjFPC \
+                  -Scgi \
+                  -O1 \
+                  -ve \
+                  -Fu./synapse/ \
+                  -Fu. \
+                  -Fu./lib/@architecture@-@os@/ \
+                  -FE./lib/@architecture@-@os@/

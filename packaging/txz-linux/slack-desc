@@ -1,0 +1,6 @@
+        |-----handy-ruler-----------------------------------|
+libmmapi: It is an API library for MMxD Raspberry Pi based
+libmmapi: growing house controlling and remote monitoring
+libmmapi: device. You can write own handler application with
+libmmapi: this library easily.
+libmmapi: Package created by: Pozsar Zsolt

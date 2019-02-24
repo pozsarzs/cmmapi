@@ -1,0 +1,45 @@
+MMAPI  - Application programming interface for MMxD device
+----------------------------------------------------------
+
+I. About software
+
+  It is an API library for MMxD Raspberry Pi based growing house controlling
+  and remote monitoring device. You can write own handler application with
+  this library easily. See manual page for available functions and procedures.
+
+II. How to get installer package for my OS?
+
+  Visit homepage (see later) to download installer packages:
+
+  FreeBSD:     libmmapi-0.1.txz
+               libmmapi-0.1-FreeBSD-Port.shar  port package
+
+  Linux:       libmmapi_0.1-1_i386.deb         Debian GNU/Linux
+               libmmapi-0.1-i586-1.txz         Slackware
+               libmmapi-0.1-1.i386.rpm         Suse Linux
+               libmmapi-0.1-i586.bin           (linux-i586)
+               libmmapi-0.1-i586.tar.gz        (linux-i586) - portable
+
+  Windows:     libmmapi-0.1-win32.exe
+               libmmapi-0.1-win32.msi
+               libmmapi-0.1-win32.zip          portable
+
+  source:      libmmapi-0.1.tar.gz
+
+III. Contact
+
+   Homepage:             <http://www.szerafingomba.hu/softwares.html>
+   Author:               Pozsar Zsolt self-employed
+   Tax ID:               60407850-1-36
+   Registration num.:    20703695
+
+   E-mail:               <pozsar.zsolt@.szerafingomba.hu>
+   Phone:                +36 56/470-272
+   Mobile:               +36 30/359-8783
+   Postal address:       Pozsar Zsolt
+                         Kurazsi Fo ut 1.
+                         HU-5430 Tiszafoldvar
+                         Hungary
+---------------------------------------------------------------------------------
+    MMAPI * Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@.szerafingomba.hu>
+

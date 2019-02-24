@@ -1,0 +1,7 @@
+MMAPI
+It is an API library for MMxD Raspberry Pi based growing
+house controlling and remote monitoring device. You can
+write own handler application with this library easily.
+
+Homepage: http://www.szerafingomba.hu/softwares.html
+Package created by: Pozsar Zsolt
