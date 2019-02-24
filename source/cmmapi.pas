@@ -1,11 +1,23 @@
 program cmmapi;
-uses
-  mmapi;
 const
   PRGNAME='cmmapi';
   PRGVER='0.1';
 
-procedure usage;
+function address: pchar; cdecl; external 'mmapi';
+function city: pchar; cdecl; external 'mmapi';
+function devicedata(line: byte): pchar; cdecl; external 'mmapi';
+function deviceportsname(line: byte): pchar; cdecl; external 'mmapi';
+function devicetype: pchar; cdecl; external 'mmapi';
+function deviceversion: pchar; cdecl; external 'mmapi';
+function growinghousenumber: pchar; cdecl; external 'mmapi';
+function uid(id: pchar): pchar; cdecl; external 'mmapi';
+function url(u: pchar): pchar; cdecl; external 'mmapi';
+function username: pchar; cdecl; external 'mmapi';
+function version: pchar; cdecl; external 'mmapi';
+procedure getdata; cdecl; external 'mmapi';
+procedure getinfo; cdecl; external 'mmapi';
+
+procedure showusage;
 begin
   writeln('Usage:');
   writeln('  '+PRGNAME+' [command] [parameters]');
@@ -18,9 +30,10 @@ begin
   writeln;
 end;
 
-procedure version;
+procedure showversion;
 begin
-  writeln(PRGNAME+' v'+PRGVER);
+  writeln(upcase(PRGNAME)+' version: '+PRGVER);
+  writeln('MMAPI library version: ',version);
   writeln;
   writeln('This application was compiled at ',{$I %TIME%},' on ',{$I %DATE%},
     ' by ',{$I %USER%});
@@ -30,17 +43,17 @@ begin
   halt(0);
 end;
 
-procedure badparameters;
+procedure showbadparameters;
 begin
   writeln('Bad command line parameters. Use -h or --help to usage.');
 end;
 
-procedure writedatatostdout(mode: byte);
+procedure writedatatostdout(suid, surl: ansistring; mode: byte);
 var
   b: byte;
 begin
-  uid(paramstr(2));
-  url(paramstr(3));
+  uid(pchar(suid));
+  url(pchar(surl));
   if mode=3
     then getdata
     else getinfo;
@@ -65,22 +78,22 @@ begin
 end;
 
 begin
-  if (paramcount=0) or (paramcount=2) then usage;
+  if (paramcount=0) or (paramcount=2) then showusage;
   if paramcount=1 then
   case paramstr(1) of
-    '-h':        usage;
-    '-v':        version;
-    '--help':    usage;
-    '--version': version;
-  else badparameters;
+    '-h':        showusage;
+    '-v':        showversion;
+    '--help':    showusage;
+    '--version': showversion;
+  else showbadparameters;
   end;
   if paramcount=3 then
   case paramstr(1) of
-    'data':   writedatatostdout(3);
-    'device': writedatatostdout(0);
-    'ports':  writedatatostdout(2);
-    'user':   writedatatostdout(1);
-  else badparameters;
+    'data':   writedatatostdout(paramstr(2),paramstr(3),3);
+    'device': writedatatostdout(paramstr(2),paramstr(3),0);
+    'ports':  writedatatostdout(paramstr(2),paramstr(3),2);
+    'user':   writedatatostdout(paramstr(2),paramstr(3),1);
+  else showbadparameters;
   end;
   halt(0);
 end.
