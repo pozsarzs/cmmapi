@@ -1,4 +1,5 @@
 program cmmapi;
+// uses mmapi;
 const
   PRGNAME='cmmapi';
   PRGVER='0.1';
