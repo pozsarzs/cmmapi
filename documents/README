@@ -3,28 +3,24 @@ CMMAPI - Shell script programming API for MMxD device
 
 I. About software
 
-  It is an API library for MMxD Raspberry Pi based growing house controlling
-  and remote monitoring device. You can write own handler application with
-  this library easily. See manual page for available functions and procedures.
+  It is an command line API program for MMxD Raspberry Pi based growing house
+  controlling and remote monitoring device. You can write own handler shell
+  script with this easily. See manual page for available functions.
 
 II. How to get installer package for my OS?
 
   Visit homepage (see later) to download installer packages:
 
-  FreeBSD:     libmmapi-0.1.txz
-               libmmapi-0.1-FreeBSD-Port.shar  port package
+  FreeBSD:     cmmapi-0.1.txz
+               cmmapi-0.1-FreeBSD-Port.shar  port package
 
-  Linux:       libmmapi_0.1-1_i386.deb         Debian GNU/Linux
-               libmmapi-0.1-i586-1.txz         Slackware
-               libmmapi-0.1-1.i386.rpm         Suse Linux
-               libmmapi-0.1-i586.bin           (linux-i586)
-               libmmapi-0.1-i586.tar.gz        (linux-i586) - portable
+  Linux:       cmmapi_0.1-1_i386.deb         Debian GNU/Linux
+               cmmapi-0.1-i586-1.txz         Slackware
+               cmmapi-0.1-1.i386.rpm         Suse Linux
+               cmmapi-0.1-i586.bin           (linux-i586)
+               cmmapi-0.1-i586.tar.gz        (linux-i586) - portable
 
-  Windows:     libmmapi-0.1-win32.exe
-               libmmapi-0.1-win32.msi
-               libmmapi-0.1-win32.zip          portable
-
-  source:      libmmapi-0.1.tar.gz
+  source:      cmmapi-0.1.tar.gz
 
 III. Contact
 
@@ -41,5 +37,5 @@ III. Contact
                          HU-5430 Tiszafoldvar
                          Hungary
 ---------------------------------------------------------------------------------
-    MMAPI * Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@.szerafingomba.hu>
+   CMMAPI * Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@.szerafingomba.hu>
 
