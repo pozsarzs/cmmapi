@@ -2,15 +2,8 @@
 set -e
 # Automatically added by dh_installdocs
 if [ "$1" = "configure" ]; then
-  if [ -d /usr/doc -a ! -e /usr/doc/libmmapi -a -d /usr/share/doc/libmmapi ]; then
-    ln -sf /usr/share/doc/libmmapi /usr/doc/libmmapi
+  if [ -d /usr/doc -a ! -e /usr/doc/cmmapi -a -d /usr/share/doc/cmmapi ]; then
+    ln -sf /usr/share/doc/cmmapi /usr/doc/cmmapi
   fi
 fi
-if [ -x update-menus ]; then
-  update-menus
-fi
 # End automatically added section
-mv /usr/lib/libmmapi.so /usr/lib/libmmapi.so.0.1.1
-ln -s /usr/lib/libmmapi.so.0.1.1 /usr/lib/libmmapi.so.0
-ln -s /usr/lib/libmmapi.so.0.1.1 /usr/lib/libmmapi.so
-ldconfig

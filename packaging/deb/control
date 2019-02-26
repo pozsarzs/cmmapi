@@ -1,11 +1,13 @@
-Package: libmmapi
+Package: cmmapi
 Version: 0.1
-Section: libs
+Section: misc
 Priority: extra
 Architecture: i386
-Installed-Size: ? MB
-Maintainer: Pozsar Zsolt <pozsar.zsolt@.szerafingomba.hu>
-Description:
- It is an API library for MMxD Raspberry Pi based growing
- house controlling and remote monitoring device. You can
- write own handler application with this library easily.
+Installed-Size: 204 kB
+Maintainer: Pozsar Zsolt <pozsar.zsolt@szerafingomba.hu>
+Depends: libc6, libmmapi
+Description: Command line utility for MMAPI library.
+ You can write own handler shell script for MMxD
+ Raspberry Pi based growing house controlling and
+ remote monitoring device with this easily.
+ See manual page for available functions.
