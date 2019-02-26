@@ -1,10 +1,10 @@
 Short information
 -----------------
-CMMAPI * Shell script programming API for MMxD device
+CMMAPI * Command line utility for MMAPI library
 Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@.szerafingomba.hu>
 - OS: FreeBSD, Linux
 - Software version: v0.1
 - Software licence: EUPL v1.1
 - Software language: EN
-- Documentation language: EN
+- Documentation language: EN, HU
 - Homepage: <http://www.szerafingomba.hu/softwares.html>

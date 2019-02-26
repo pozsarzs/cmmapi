@@ -1,11 +1,12 @@
-CMMAPI - Shell script programming API for MMxD device
------------------------------------------------------
+CMMAPI - Command line utility for MMAPI library
+-----------------------------------------------
 
 I. About software
 
-  It is an command line API program for MMxD Raspberry Pi based growing house
-  controlling and remote monitoring device. You can write own handler shell
-  script with this easily. See manual page for available functions.
+  It is an command line utility for MMAPI library. You can write own
+  handler shell script for MMxD Raspberry Pi based growing house
+  controlling and remote monitoring device with this easily.
+  See manual page for available functions.
 
 II. How to get installer package for my OS?
 

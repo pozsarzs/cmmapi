@@ -51,7 +51,7 @@ begin
   writeln(upcase(PRGNAME)+' version: '+PRGVER);
   writeln('MMAPI library version: ',version);
   writeln;
-  writeln('This application was compiled at ',{$I %TIME%},' on ',{$I %DATE%},
+  writeln('This program was compiled at ',{$I %TIME%},' on ',{$I %DATE%},
     ' by ',{$I %USER%});
   writeln('FPC version: ',{$I %FPCVERSION%});
   writeln('Target OS:   ',{$I %FPCTARGETOS%});
