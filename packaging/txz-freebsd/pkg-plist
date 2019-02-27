@@ -1,7 +1,7 @@
-/usr/share/doc/libmmapi/VERSION
-/usr/share/doc/libmmapi/README
-/usr/share/doc/libmmapi/AUTHORS
-/usr/share/doc/libmmapi/COPYING
-/usr/share/man/man3/libmmapi.3.gz
-/usr/share/man/hu/man3/libmmapi.3.gz
-/usr/lib/libmmapi.so
+/usr/bin/cmmapi
+/usr/share/doc/cmmapi/AUTHORS
+/usr/share/doc/cmmapi/COPYING
+/usr/share/doc/cmmapi/README
+/usr/share/doc/cmmapi/VERSION
+/usr/share/man/hu/man1/cmmapi.1.gz
+/usr/share/man/man1/cmmapi.1.gz

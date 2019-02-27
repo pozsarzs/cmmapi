@@ -1,6 +1,6 @@
 # +----------------------------------------------------------------------------+
-# | CMMAPI 0.1 * Shell script programming API for MMxD device                  |
-# | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@.szerafingomba.hu>           |
+# | CMMAPI 0.1 * Command line utility for MMAPI library                        |
+# | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@szerafingomba.hu>            |
 # | Makefile                                                                   |
 # | Makefile for Unix-like systems                                             |
 # +----------------------------------------------------------------------------+
