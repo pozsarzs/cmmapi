@@ -8,7 +8,7 @@
 include ../Makefile.global
 
 srcfiles = cmmapi.pas
-binfiles = cmmapi.so
+binfiles = cmmapi
 
 all:
 	@echo "- Compiling source code..."

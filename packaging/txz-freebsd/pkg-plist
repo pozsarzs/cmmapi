@@ -1,7 +1,7 @@
-/usr/bin/cmmapi
-/usr/share/doc/cmmapi/AUTHORS
-/usr/share/doc/cmmapi/COPYING
-/usr/share/doc/cmmapi/README
-/usr/share/doc/cmmapi/VERSION
-/usr/share/man/hu/man1/cmmapi.1.gz
-/usr/share/man/man1/cmmapi.1.gz
+bin/cmmapi
+share/doc/cmmapi/AUTHORS
+share/doc/cmmapi/COPYING
+share/doc/cmmapi/README
+share/doc/cmmapi/VERSION
+man/hu/man1/cmmapi.1.gz
+man/man1/cmmapi.1.gz

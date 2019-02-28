@@ -16,26 +16,26 @@ clean:
 install:
 	@echo -n "- Installing manual files..."
 	@for x in $(languages); do \
-	  if [ -e $(name)_$$x.3.gz ]; \
+	  if [ -e $(name)_$$x.1.gz ]; \
 	  then \
-	    $(install) -d $(mandir)/$$x/man3; \
-	    $(install) -m $(txtmode) $(name)_$$x.3.gz $(mandir)/$$x/man3; \
-	    mv $(mandir)/$$x/man3/$(name)_$$x.3.gz $(mandir)/$$x/man3/$(name).3.gz ; \
+	    $(install) -d $(mandir)/$$x/man1; \
+	    $(install) -m $(txtmode) $(name)_$$x.1.gz $(mandir)/$$x/man1; \
+	    mv $(mandir)/$$x/man1/$(name)_$$x.1.gz $(mandir)/$$x/man1/$(name).1.gz ; \
 	  fi; \
 	done
-	@$(install) -d $(mandir)/man3;
-	@mv $(mandir)/en/man3/* $(mandir)/man3
-	@rmdir $(mandir)/en/man3/
+	@$(install) -d $(mandir)/man1;
+	@mv $(mandir)/en/man1/* $(mandir)/man1
+	@rmdir $(mandir)/en/man1/
 	@rmdir $(mandir)/en
 	@echo "done."
 
 uninstall:
 	@echo -n "- Removing manual files..."
-	@$(rm) $(mandir)/man3/$(name).3.gz
+	@$(rm) $(mandir)/man1/$(name).1.gz
 	@for x in $(languages); do \
-	  if [ -e $(name)_$$x.3.gz ]; \
+	  if [ -e $(name)_$$x.1.gz ]; \
 	  then \
-	    $(rm) $(mandir)/$$x/man3/$(name).3.gz; \
+	    $(rm) $(mandir)/$$x/man1/$(name).1.gz; \
 	  fi; \
 	done
 	@echo "done."
