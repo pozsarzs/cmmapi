@@ -1,0 +1,37 @@
+#!/bin/bash
+# +----------------------------------------------------------------------------+
+# | CMMAPI 0.1 * Command line utility for MMAPI library                        |
+# | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@.szerafingomba.hu>           |
+# | uninstall                                                                  |
+# | Uninstaller script                                                         |
+# +----------------------------------------------------------------------------+
+
+# constans
+SWN="CMMAPI"
+SWV=`cat documents/VERSION`
+INSTDIR=/opt/cmmapi
+LINKDIR=/usr/local
+BINFILE=cmmapi
+
+# uninstaller
+clear
+echo "--------------------------------------------------------------------------------"
+echo "$SWN $SWV uninstaller script"
+echo "Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@.szerafingomba.hu>"
+echo "--------------------------------------------------------------------------------"
+if [ `whoami` != 'root' ]
+then echo 'ERROR: You are not root!'; exit
+fi
+sleep 1
+echo "Uninstalling..."
+echo "- removing symbolic links:"
+rm --force $LINKDIR/bin/$BINFILE 2> /dev/null
+echo "  $LINKDIR/bin/$BINFILE"
+rm --force $LINKDIR/share/man/man1/$BINFILE.1.gz 2> /dev/null
+echo "  $LINKDIR/share/man/man1/$BINFILE.1.gz"
+rm --force $LINKDIR/share/man/hu/man1/$BINFILE.1.gz 2> /dev/null
+echo "  $LINKDIR/share/man/hu/man1/$BINFILE.1.gz"
+echo "- removing directory recursively:"
+rm --force --recursive $INSTDIR 2> /dev/null
+echo "  $INSTDIR"/
+echo "...done."
