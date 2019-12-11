@@ -3,7 +3,7 @@ Short information
 CMMAPI * Command line utility for MMAPI library
 Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@szerafingomba.hu>
 - OS: FreeBSD, Linux
-- UI: -
+- UI: CUI
 - Software version: v0.1
 - Software licence: EUPL v1.1
 - Software language: EN
