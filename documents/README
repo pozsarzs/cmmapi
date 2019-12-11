@@ -1,16 +1,16 @@
-CMMAPI - Command line utility for MMAPI library
------------------------------------------------
+CMMAPI -   Command line utility for MMAPI library
+-------------------------
 
-I. About software
-
+1. About software
+~~~~~~~~~~~~~~~~~
   It is an command line utility for MMAPI library. You can write own
   handler shell script for MMxD Raspberry Pi based growing house
   controlling and remote monitoring device with this easily.
   See manual page for available functions.
 
-II. How to get installer package for my OS?
-
-  Visit homepage (see later) to download installer packages:
+2. How to get installer package for my OS?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+a. Visit homepage (see later) to download installer packages:
 
   FreeBSD:     cmmapi-0.1.txz
                cmmapi-0.1-FreeBSD-Port.shar  port package
@@ -19,24 +19,39 @@ II. How to get installer package for my OS?
                cmmapi-0.1-i586-1.txz         Slackware
                cmmapi-0.1-1.i386.rpm         Suse Linux
                cmmapi-0.1-i586.bin           (linux-i586)
-               cmmapi-0.1-i586.tar.gz        (linux-i586) - portable
+               cmmapi-0.1-i586.tar.gz        (linux-i586)
 
   source:      cmmapi-0.1.tar.gz
 
-III. Contact
+b. Download from Github
 
-   Homepage:             <http://www.szerafingomba.hu/softwares.html>
-   Author:               Pozsar Zsolt self-employed
+  $ git clone https://github.com/pozsarzs/cmmapi.git
+
+c. Download from Debian repository
+
+  set reporitory:
+  # echo "deb http://www.szerafingomba.hu/deb/ ./" >> /etc/apt/sources.list
+  # wget -q -O - http://www.szerafingomba.hu/deb/KEY.gpg | apt-key add -
+  # apt-get update
+
+  install
+  # apt-get install cmmapi
+
+3. Contact
+~~~~~~~~~~
+
+   Homepage:             <http://www.szerafingomba.hu/softwares/>
+   Author:               Pozsar Zsolt
    Tax ID:               60407850-1-36
    Registration num.:    20703695
 
    E-mail:               <pozsar.zsolt@szerafingomba.hu>
    Phone:                +36 56/470-272
-   Mobile:               +36 30/359-8783
+   Mobile:               +36 30/249-5030
    Postal address:       Pozsar Zsolt
                          Kurazsi Fo ut 1.
                          HU-5430 Tiszafoldvar
                          Hungary
----------------------------------------------------------------------------------
-   CMMAPI * Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@.szerafingomba.hu>
 
+---------------------------------------------------------------------------------
+ CMMAPI * Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@szerafingomba.hu>

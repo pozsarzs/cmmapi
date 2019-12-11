@@ -1,56 +1,9 @@
-                            Installation instruction
-                            ~~~~~~~~~~~~~~~~~~~~~~~~
+Installation instruction for source and binary tar.hu package
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 1. FreeBSD
 ~~~~~~~~~~
-a. From binary (txz) package
-
-   Use package manager to install/remove application.
-
-b. From source package
-
-   Build and install:
-   # tar -xzf cmmapi-0.1.tar.gz
-   # ./configure
-   # make
-   # make install
-
-   Remove:
-   # make uninstall
-
-2. Linux
-~~~~~~~~
-a. From binary (deb, rpm, txz) package
-
-   Use package manager to install/remove application.
-
-b. From binary (bin) package
-
-   Install:
-   # ./cmmapi-0.1-i586.bin
-
-   Remove:
-   # /opt/cmmapi/uninstall
-
-c. From binary (tar.gz) package
-
-   Install:
-   # cp cmmapi-0.1-i586.tar.gz /opt
-   # cd /opt
-   # tar -xzf cmmapi-0.1-i586.tar.gz
-   # cd cmmapi
-   # ./create_links
-            or
-   # tar -xzf cmmapi-0.1-i586.tar.gz
-   # cd cmmapi
-   # ./install
-
-   Remove:
-   # /opt/cmmapi/remove_links
-   # rm -r /opt/cmmapi/
-            or
-   # /opt/cmmapi/uninstall
-
-d. From source package
+a. From source package
 
    Build and install:
    $ tar -xzf cmmapi-0.1.tar.gz
@@ -60,3 +13,38 @@ d. From source package
 
    Remove:
    # make uninstall
+
+2. Linux
+~~~~~~~~
+a. From source package
+
+   Build and install:
+   $ tar -xzf cmmapi-0.1.tar.gz
+   $ ./configure
+   $ make
+   # make install
+
+   Remove:
+   # make uninstall
+
+b. From binary package
+
+   Install:
+   # tar -xzf cmmapi-0.1-i586.tar.gz
+   # cd cmmapi
+   # ./create_links
+            or
+   # tar -xzf cmmapi-0.1-i586.tar.gz
+   # cd cmmapi
+   # ./install
+
+   Remove:
+   # cd cmmapi
+   # ./remove_links
+   # cd ..
+   # rm -r cmmapi
+            or
+   # /opt/cmmapi/uninstall
+
+---------------------------------------------------------------------------------
+ CMMAPI * Copyright (C) 2019 Pozsar Zsolt <pozsar.zsolt@szerafingomba.hu>

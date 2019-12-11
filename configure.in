@@ -1,5 +1,5 @@
 dnl +--------------------------------------------------------------------------+
-dnl | CMMAPI 0.1 * Command line utility for MMAPI library                      |
+dnl | CMMAPI v0.1 * Command line utility for MMAPI library                     |
 dnl | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@szerafingomba.hu>          |
 dnl | configure.in                                                             |
 dnl | Autoconf input file for unix-like systems                                |

@@ -1,18 +1,16 @@
 { +--------------------------------------------------------------------------+ }
-{ | CMMAPI 0.1 * Command line utility for MMAPI library                      | }
+{ | CMMAPI v0.1 * Command line utility for MMAPI library                     | }
 { | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@szerafingomba.hu>          | }
-{ | Makefile                                                                 | }
-{ | Make file for FreePascal source.                                         | }
+{ | cmmapi.pas                                                               | }
+{ | Source code                                                              | }
 { +--------------------------------------------------------------------------+ }
 
-{
-  This program is free software: you can redistribute it and/or modify it
-under the terms of the European Union Public License 1.1 version.
-
-  This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.
-}
+// This program is free software: you can redistribute it and/or modify it
+// under the terms of the European Union Public License 1.1 version.
+//
+// This program is distributed in the hope that it will be useful, but WITHOUT
+// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+// FOR A PARTICULAR PURPOSE.
 
 program cmmapi;
 const

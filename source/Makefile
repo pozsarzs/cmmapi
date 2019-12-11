@@ -1,8 +1,8 @@
 # +----------------------------------------------------------------------------+
-# | CMMAPI 0.1 * Command line utility for MMAPI library                        |
+# | CMMAPI v0.1 * Command line utility for MMAPI library                       |
 # | Copyright (C) 2019 Pozsár Zsolt <pozsar.zsolt@szerafingomba.hu>            |
 # | Makefile                                                                   |
-# | Make file for FreePascal source.                                           |
+# | Make file for source code                                                  |
 # +----------------------------------------------------------------------------+
 
 include ../Makefile.global

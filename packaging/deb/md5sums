@@ -1,8 +1,8 @@
 739abe225c42a066d57a8e1a1c9bfcb3  usr/bin/cmmapi
 4994f4cacf022e01ffda29f5627f7ab5  usr/share/doc/cmmapi/AUTHORS
 c8fb9e658b6ad2a4084068e005ae214d  usr/share/doc/cmmapi/changelog.Debian.gz
-591175c932afc1d99a99c7ad5da8d7f2  usr/share/doc/cmmapi/copyright
-7d9155bb4b39632996deff81e560c1ce  usr/share/doc/cmmapi/README
+659d45782daed869faa97bcd5831318f  usr/share/doc/cmmapi/copyright
+f028d8ea1937e321eab362f9008cd717  usr/share/doc/cmmapi/README
 e95b902a1037d461ca0e94f2bddf7a28  usr/share/doc/cmmapi/VERSION
-dfca304c0ca756b710b5c8d7f7a81867  usr/share/man/man1/cmmapi.1.gz
-3f195e1a190fb11101049ff60c65fc9c  usr/share/man/hu/man1/cmmapi.1.gz
+4253848d7bd6896deec07549d74d9379  usr/share/man/man1/cmmapi.1.gz
+e48c50f3c1093d5b8a7d0fcc10d85d23  usr/share/man/hu/man1/cmmapi.1.gz
